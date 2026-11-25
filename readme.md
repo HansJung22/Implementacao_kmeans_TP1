@@ -28,7 +28,7 @@ Dado um conjunto de $N$ pontos em um espaço de $D$ dimensões, o algoritmo part
 CoPa_TP1/
 ├── Base_de_dados/
 │   ├── YearPredictionMSD.txt     # Dataset real principal (N=515345, D=90)
-│   └── teste_5k.txt              # Subconjunto leve para testes rápidos de validação
+│   └── teste_5k.txt              # Subconjunto leve para testes rápidos de validação (N=5001, D=90)
 ├── kmeans_sequencial/
 │   ├── kmeans_seq.c              # Implementação sequencial de referência
 │   └── executar.sh               # Script automatizado de compilação, benchmark e diff
@@ -46,7 +46,7 @@ CoPa_TP1/
 ## 3. Bases de Dados Utilizadas
 
 ### 3.1 Base Oficial de Benchmark: *YearPredictionMSD* (UCI ML Repository)
-* **Origem:** *Million Song Dataset* (UCI Machine Learning Repository)
+* **Origem:** *Million Song Dataset* ([UCI Machine Learning Repository](https://archive.ics.uci.edu/dataset/203/yearpredictionmsd))
 * **Dimensões:** $N = 515.345$ instâncias $\times$ $D = 90$ atributos contínuos de timbre de áudio (`float`).
 * **Formato:** Arquivo texto separado por vírgulas (`.txt`), sem cabeçalho. A coluna $0$ contém o ano da música e é descartada automaticamente na leitura (`skip_col0 = 1`).
 * **Calibragem:** Com $K = 64$ clusters e $50$ iterações, a versão sequencial demanda mais de $10$ segundos de computação pura, atendendo ao requisito mínimo do trabalho.

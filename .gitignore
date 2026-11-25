@@ -7,7 +7,7 @@ Base_de_dados/*
 # Compiled binaries
 kmeans_seq
 kmeans_omp
-kmeans_cuda
+kmeans_cuda/kmeans_cuda
 
 # Generated output files
 centroides_*.txt
